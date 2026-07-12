@@ -1,0 +1,93 @@
+baseURL: "https://yael-van-dok.github.io"
+title: "Yael van Dok"
+timeZone: "Europe/Zurich"
+theme: "dovaya-hugo-theme"
+module:
+  hugoVersion:
+    min: "0.146.0"
+
+# caches:
+#   images:
+#     dir: :cacheDir/images
+
+markup:
+  goldmark:
+    extensions:
+      extras:
+        superscript:
+          enable: true
+    renderHooks:
+      link:
+        useEmbedded: fallback
+    parser:
+      attribute:
+        title: true
+
+pagination:
+  disableAliases: false
+  pagerSize: 5
+
+params:
+  author:
+    name: "Yael van Dok"
+    links:
+      orcid: 
+        title: ORCID
+        url: https://orcid.org/0009-0006-0084-7414
+        svg: orcid-svgrepo-com
+        position: 1
+      googlescholar: 
+        title: Google Scholar
+        url: https://scholar.google.com/citations?user=4WozoU8AAAAJ
+        svg: google-scholar-svgrepo-com
+        position: 2
+      linkedin: 
+        title: LinkedIn
+        url: "https://www.linkedin.com/in/yael-van-dok-371748315"
+        svg: linkedin-svgrepo-com
+        position: 3
+      github: 
+        title: GitHub
+        url: https://github.com/yael-van-dok/
+        svg: github-svgrepo-com
+        position: 4
+  launchYear: 2024
+  images:
+  - logo.jpg
+
+permalinks:
+  page:
+    blog: "/blog/:year/:month/:day/:slug"
+
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: true
+
+languages:
+  en:
+    weight: 1
+    disabled: false
+    locale: en-US
+    direction: ltr
+    label: English
+    copyright: Yael van Dok. All rights reserved.
+    params:
+      author:
+        description:
+        - Computer Scientist. 
+        # - Game Dev. 
+        # - Web Dev.
+    description: Official Website of Yael van Dok.
+  de:
+    weight: 2
+    disabled: false
+    locale: de-CH
+    direction: ltr
+    label: Deutsch
+    copyright: Yael van Dok. Alle Rechte vorbehalten.
+    params:
+      author:
+        description:
+          - Informatikerin. 
+          # - Spieleentwicklerin. 
+          # - Web Dev.
+    description: Offizielle Website von Yael van Dok.

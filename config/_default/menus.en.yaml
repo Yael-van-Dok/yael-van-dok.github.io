@@ -1,0 +1,31 @@
+main:
+  - identifier: "Home"
+    name: "Home"
+    pageRef: "/"
+    weight: 10
+    params:
+      svg: "home-svgrepo-com"
+  - identifier: "Academia"
+    name: "Academia"
+    pageRef: "/academia"
+    weight: 20
+    params:
+      svg: "microscope-svgrepo-com"
+  - identifier: "Projects"
+    name: "Projects"
+    pageRef: "/projects"
+    weight: 30
+    params:
+      svg: "tool-svgrepo-com"
+  - identifier: "CV"
+    name: "CV"
+    pageRef: "/cv"
+    weight: 40
+    params:
+      svg: "file-text-svgrepo-com"
+  - identifier: "Blog"
+    name: "Blog"
+    pageRef: "/blog"
+    weight: 50
+    params:
+      svg: "tower-broadcast-svgrepo-com"
