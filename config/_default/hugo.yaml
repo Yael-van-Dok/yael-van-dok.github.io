@@ -6,9 +6,9 @@ module:
   hugoVersion:
     min: "0.146.0"
 
-# caches:
-#   images:
-#     dir: :cacheDir/images
+caches:
+  images:
+    dir: :cacheDir/images
 
 markup:
   goldmark:
